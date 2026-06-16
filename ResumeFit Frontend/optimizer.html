@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Optimizer — ResumeFit</title>
+  <meta name="description" content="Upload your resume, paste a job description, and get a match score with keyword analysis and improvement suggestions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">RF</span>
+        ResumeFit
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Open menu</span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="features.html">Services</a></li>
+        <li><a href="tips.html">Resume Tips</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="eyebrow">Resume Optimizer</span>
+        <h1>Check your resume against any job description</h1>
+        <p class="lead">
+          Add your resume and paste in the job posting you're applying for. ResumeFit
+          will show a match score, the keywords it found, and what to improve.
+        </p>
+      </div>
+    </section>
+
+    <!-- Optimizer Form -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="upload-card">
+          <form id="optimizer-form" novalidate>
+
+            <h2 style="margin-bottom: var(--space-sm);">1. Add your resume</h2>
+            <div class="dropzone" role="button" tabindex="0" aria-describedby="file-status">
+              <div class="dropzone__icon" aria-hidden="true">📄</div>
+              <h3>Drop your resume here</h3>
+              <p>or click to browse — PDF, DOC, or DOCX, up to 5MB</p>
+              <label for="resume-file" class="visually-hidden">Resume file upload</label>
+              <input type="file" id="resume-file" accept=".pdf,.doc,.docx" />
+            </div>
+            <p id="file-status" class="file-status" aria-live="polite">No file selected yet.</p>
+
+            <h2 style="margin-top: var(--space-lg); margin-bottom: var(--space-sm);">2. Paste the job description</h2>
+            <div class="field">
+              <label for="job-description">Job description</label>
+              <textarea id="job-description" name="job-description" required
+                aria-describedby="jd-hint jd-error"
+                placeholder="Paste the full job description here..."></textarea>
+              <p id="jd-hint" class="field__hint">We use this text only to compare keywords for your report — it is not stored.</p>
+              <p id="jd-error" class="field-error" role="alert">Please paste the job description before running the check.</p>
+            </div>
+
+            <div class="hero__cta" style="justify-content: flex-start; margin-top: var(--space-lg);">
+              <button type="submit" class="btn btn-primary">Run resume check</button>
+            </div>
+          </form>
+
+          <!-- Feedback Results (hidden until generated) -->
+          <div id="feedback" class="feedback" aria-live="polite">
+            <h2>Your match report</h2>
+
+            <div class="feedback__score">
+              <div class="feedback__score-value" id="score-value">0%</div>
+              <div class="feedback__score-bar" role="progressbar" aria-label="Resume match score" aria-valuemin="0" aria-valuemax="100">
+                <div class="feedback__score-fill" id="score-fill"></div>
+              </div>
+            </div>
+
+            <div class="feedback__keywords">
+              <h3>Keyword matches</h3>
+              <p>Skills and terms from the job description, and whether they appear in your resume sample.</p>
+              <div class="keyword-chips" id="keyword-chips"></div>
+            </div>
+
+            <div style="margin-top: var(--space-lg);">
+              <h3>Suggestions</h3>
+              <ul class="feedback__list" id="suggestions-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Helpful note -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Good to know</span>
+          <h2>This is a sample report</h2>
+          <p>
+            This demo runs entirely in your browser using a small sample keyword list,
+            so you can see the format of the feedback. The full ResumeFit platform
+            performs a deeper analysis of your actual resume content.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-mark" aria-hidden="true">RF</span>
+          ResumeFit
+        </a>
+        <p>Plain-language resume feedback to help you apply with confidence and reach more interviews.</p>
+        <div class="footer-social" style="margin-top: 1rem;">
+          <a href="#" aria-label="ResumeFit on LinkedIn">in</a>
+          <a href="#" aria-label="ResumeFit on Twitter / X">X</a>
+          <a href="#" aria-label="ResumeFit on Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Services</a></li>
+          <li><a href="optimizer.html">Resume Optimizer</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tips.html">Resume Tips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 ResumeFit. All rights reserved.</p>
+      <p>ResumeFit</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
