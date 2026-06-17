@@ -58,7 +58,7 @@
 }
 /* Dark mode - nav background */
 .darkmode .site-header{
-   background-color: rgba(13, 17, 23, 0.92);
+   background-color: rgba(24, 51, 43, 0.92);
 }
 
 /* ---------- Reset & Base ---------- */
@@ -251,16 +251,20 @@ p {
   width: 100%;
 }
 #theme-switch{
-   height: 50%;
-   width: 50%;
+   height: 45px;
+   width: 45px;
    padding: 0;
    border-radius: 50%;
-   background-color: var(--base-surface);
+   background-color: var(--color-surface);
    display: flex;
+   margin: auto;
    justify-content: center;
    align-items: center;
+   cursor: pointer;
 }
 #theme-switch svg{
+   width: 22px;
+   height: 22px;
    fill: var(--color-variant);
 }
 #theme-switch svg:last-child{
@@ -270,7 +274,7 @@ p {
    display: none;
 }
 
-.darkmode #theme-switch sag:last-child{
+.darkmode #theme-switch svg:last-child{
    display: block;
 }
    
