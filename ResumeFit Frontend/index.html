@@ -1,3 +1,5 @@
+# Code Refactored
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,7 +136,6 @@
         <input type="range" id="compare-range" class="compare__slider" min="0" max="100" value="50"
                aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
                aria-label="Slide to compare before and after resume wording">
-        <!-- <p class="compare__caption">Same experience, written to show impact and match common job-description language.</p> -->
       </div>
     </section>
 
@@ -264,5 +265,30 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    // Narration functionality
+    window.onload = function() {
+      const narrator = new SpeechSynthesisUtterance();
+      narrator.text = "Goodbye! Thank you for visiting ResumeFit.";
+      window.speechSynthesis.speak(narrator);
+    };
+
+    // Greeting functionality
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'h') {
+        const greeting = new SpeechSynthesisUtterance();
+        greeting.text = "Hello! What do you need assistance with today?";
+        window.speechSynthesis.speak(greeting);
+      }
+    });
+
+    // Activate speech mode for tips
+    function activateSpeechMode() {
+      const tips = new SpeechSynthesisUtterance();
+      tips.text = "Here are some tips to enhance your resume...";
+      window.speechSynthesis.speak(tips);
+    }
+  </script>
 </body>
 </html>
+
