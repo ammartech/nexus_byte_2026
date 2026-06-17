@@ -41,6 +41,25 @@
   /* Motion */
   --transition: 0.2s ease;
 }
+/* Dark Mode - Colour Tokens */
+.darkmode {
+   --color-bg: #0d1117;
+   --color-surface:      #161b22;
+   --color-primary:      #3fb99a;
+   --color-primary-dark: #2de8a4;
+   --color-accent:       #E8B86D;
+   --color-text:         #e6edf3;
+   --color-muted:        #8b949e;
+   --color-border:       #2f3a46;
+   --color-success-bg:   rgba(63,185,154,0.1);
+   --color-error:        #f08080;
+   --shadow:             0 4px 18px rgba(0,0,0,0.3);
+   --shadow-strong:      0 8px 28px rgba(0,0,0,0.5);
+}
+/* Dark mode - nav background */
+.darkmode .site-header{
+   background-color: rgba(13, 17, 23, 0.92);
+}
 
 /* ---------- Reset & Base ---------- */
 * {
@@ -231,7 +250,30 @@ p {
 .btn-block {
   width: 100%;
 }
+#theme-switch{
+   height: 50%;
+   width: 50%;
+   padding: 0;
+   border-radius: 50%;
+   background-color: var(--base-surface);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#theme-switch svg{
+   fill: var(--color-variant);
+}
+#theme-switch svg:last-child{
+   display: none;
+}
+.darkmode #theme-switch svg:first-child{
+   display: none;
+}
 
+.darkmode #theme-switch sag:last-child{
+   display: block;
+}
+   
 /* ---------- Header / Navigation ---------- */
 .site-header {
   position: sticky;
