@@ -43,22 +43,28 @@
 }
 /* Dark Mode - Colour Tokens */
 .darkmode {
-   --color-bg: #0d1117;
-   --color-surface:      #161b22;
-   --color-primary:      #3fb99a;
-   --color-primary-dark: #2de8a4;
-   --color-accent:       #E8B86D;
-   --color-text:         #e6edf3;
-   --color-muted:        #8b949e;
-   --color-border:       #2f3a46;
-   --color-success-bg:   rgba(63,185,154,0.1);
-   --color-error:        #f08080;
-   --shadow:             0 4px 18px rgba(0,0,0,0.3);
-   --shadow-strong:      0 8px 28px rgba(0,0,0,0.5);
+   --color-bg:           #0D1117;
+   --color-surface:      #161B22;
+
+   --color-primary:      #3FB99A;
+   --color-primary-dark: #2F8D75;
+
+   --color-accent:       #7EE7D1;
+
+   --color-text:         #F0F6FC;
+   --color-muted:        #A5B1BC;
+
+   --color-border:       #30363D;
+   --color-section-dark: #30363D;
+
+   --color-success-bg:   rgba(63,185,154,0.12);
+   --color-error:        #FF7B7B;
 }
+
 /* Dark mode - nav background */
 .darkmode .site-header{
-   background-color: rgba(24, 51, 43, 0.92);
+   background-color: rgba(15, 20, 28, 0.92);
+   backdrop-filter: blur(12px);
 }
 
 /* ---------- Reset & Base ---------- */
@@ -504,7 +510,7 @@ p {
 
 .compare__panel--after {
   background-color: var(--color-success-bg);
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
   clip-path: inset(0 0 0 50%);
 }
 
@@ -517,8 +523,13 @@ p {
   margin-bottom: var(--space-sm);
 }
 
-.compare__panel--before .compare__label { color: #B3854B; }
-.compare__panel--after .compare__label { color: var(--color-primary); }
+.compare__panel--before .compare__label {
+  color: #B3854B;
+}
+
+.compare__panel--after .compare__label {
+  color: var(--color-primary);
+}
 
 .compare__line {
   display: flex;
@@ -531,8 +542,13 @@ p {
   font-weight: 700;
 }
 
-.compare__panel--before .mark { color: #C0392B; }
-.compare__panel--after .mark { color: var(--color-primary); }
+.compare__panel--before .mark {
+  color: #C0392B;
+}
+
+.compare__panel--after .mark {
+  color: var(--color-primary);
+}
 
 .compare__handle {
   position: absolute;
@@ -563,6 +579,29 @@ p {
   border: none;
   cursor: ew-resize;
   padding: 0;
+}
+
+/* ---------- Dark Mode Fix ---------- */
+.darkmode .compare__panel--before {
+  background-color: #1A1F26;
+  color: #A5B1BC;
+}
+
+.darkmode .compare__panel--after {
+  background-color: #132D27;
+  color: #fff;
+}
+
+.darkmode .compare__panel--before .compare__label {
+  color: #FFB86B;
+}
+
+.darkmode .compare__panel--before .mark {
+  color: #FF7B7B;
+}
+
+.darkmode .compare__handle-grip {
+  color: #0D1117;
 }
 
 .compare__slider {
