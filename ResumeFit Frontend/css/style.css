@@ -262,7 +262,7 @@ p {
    padding: 0;
    border-radius: var(--radius);
    background-color: var(--color-surface);
-   border: 2px solid transparent;
+   border: 2px solid var(--color-primary); 
    display: flex;
    margin: auto;
    justify-content: center;
