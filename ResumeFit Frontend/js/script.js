@@ -25,6 +25,45 @@ document.addEventListener("DOMContentLoaded", function () {
       darkmode = localStorage.getItem('darkmode');
       darkmode !== "active" ? enableDarkmode() : disableDarkmode();
     });
+   // Text-to-Speech
+const ttsBtn = document.getElementById('tts-btn');
+
+if (ttsBtn && 'speechSynthesis' in window) {
+
+  ttsBtn.addEventListener('click', () => {
+
+    // If already speaking, stop it
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+      ttsBtn.textContent = '🔊 Listen';
+      ttsBtn.classList.remove('is-speaking');
+      return;
+    }
+
+    // Grab all readable text on the page
+    const content = document.getElementById('main-content');
+    const text = content ? content.innerText : document.body.innerText;
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 1;    // speed: 0.5 to 2
+    utterance.pitch = 1;   // tone: 0 to 2
+
+    // Update button when done
+    utterance.onend = () => {
+      ttsBtn.textContent = '🔊 Listen';
+      ttsBtn.classList.remove('is-speaking');
+    };
+
+    ttsBtn.textContent = '⏹ Stop';
+    ttsBtn.classList.add('is-speaking');
+    window.speechSynthesis.speak(utterance);
+  });
+
+} else if (ttsBtn) {
+  // Hide button if browser doesn't support TTS
+  ttsBtn.style.display = 'none';
+}
 
   /* ---------- Mobile Navigation Toggle ---------- */
   var navToggle = document.querySelector(".nav__toggle");
