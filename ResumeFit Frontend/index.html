@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,48 +104,46 @@
       </div>
     </section>
 
-    <!-- Before / After Comparison Section -->
-    <section class="section" aria-labelledby="compare-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">See the difference</span>
-          <h2 id="compare-heading">From overlooked to shortlisted</h2>
-          <p>
-            Drag the handle, or use the slider below the panel, to compare a resume
-            section before and after a ResumeFit review.
-          </p>
-        </div>
+   <!-- Before / After Comparison Section -->
+<section class="section" aria-labelledby="compare-heading">
+  <div class="container">
+    <div class="section-header" style="text-align: center;">
+      <span class="eyebrow" style="font-weight: bold;">See the difference</span>
+      <h2 id="compare-heading" style="font-weight: bold;">From overlooked to shortlisted</h2>
+      <p>
+        Drag the handle, or use the slider below the panel, to compare a resume
+        section before and after a ResumeFit review.
+      </p>
+    </div>
 
-        <div class="compare" role="group" aria-label="Before and after resume comparison">
-          <div class="compare__panel compare__panel--before" aria-hidden="true">
-            <span class="compare__label">Before</span>
-            <div class="compare__line"><span class="mark">–</span><span>Responsible for handling various tasks in a fast paced environment</span></div>
-            <div class="compare__line"><span class="mark">–</span><span>Worked on social media stuff for the team</span></div>
-            <div class="compare__line"><span class="mark">–</span><span>Helped improve customer satisfaction</span></div>
-            <div class="compare__line"><span class="mark">–</span><span>Good communication and teamwork skills</span></div>
-          </div>
-          <div class="compare__panel compare__panel--after" aria-hidden="true">
-            <span class="compare__label">After</span>
-            <div class="compare__line"><span class="mark">+</span><span>Managed daily scheduling and inventory for a 12-person retail team</span></div>
-            <div class="compare__line"><span class="mark">+</span><span>Grew Instagram engagement 34% through a weekly content plan</span></div>
-            <div class="compare__line"><span class="mark">+</span><span>Raised customer satisfaction scores from 81% to 92% in 6 months</span></div>
-            <div class="compare__line"><span class="mark">+</span><span>Led weekly team huddles and trained 4 new hires</span></div>
-          </div>
-          <div class="compare__handle">
-            <button type="button" class="compare__handle-grip" aria-hidden="true" tabindex="-1">
-              ↔
-            </button>
-          </div>
-        </div>
-
-        <label for="compare-range" class="visually-hidden">Adjust before and after comparison</label>
-        <input type="range" id="compare-range" class="compare__slider" min="0" max="100" value="50"
-               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
-               aria-label="Slide to compare before and after resume wording">
-        <!-- <p class="compare__caption">Same experience, written to show impact and match common job-description language.</p> -->
+    <div class="compare" role="group" aria-label="Before and after resume comparison">
+      <div class="compare__panel compare__panel--before" aria-hidden="true">
+        <span class="compare__label">Before</span>
+        <div class="compare__line"><span class="mark">–</span><span>Responsible for handling various tasks in a fast-paced environment</span></div>
+        <div class="compare__line"><span class="mark">–</span><span>Worked on social media initiatives for the team</span></div>
+        <div class="compare__line"><span class="mark">–</span><span>Contributed to improving customer satisfaction</span></div>
+        <div class="compare__line"><span class="mark">–</span><span>Demonstrated strong communication and teamwork skills</span></div>
       </div>
-    </section>
+      <div class="compare__panel compare__panel--after" aria-hidden="true">
+        <span class="compare__label">After</span>
+        <div class="compare__line"><span class="mark">+</span><span>Managed daily scheduling and inventory for a 12-person retail team</span></div>
+        <div class="compare__line"><span class="mark">+</span><span>Increased Instagram engagement by 34% through a weekly content plan</span></div>
+        <div class="compare__line"><span class="mark">+</span><span>Improved customer satisfaction scores from 81% to 92% in 6 months</span></div>
+        <div class="compare__line"><span class="mark">+</span><span>Facilitated weekly team huddles and trained 4 new hires</span></div>
+      </div>
+      <div class="compare__handle">
+        <button type="button" class="compare__handle-grip" aria-hidden="true" tabindex="-1">
+          ↔
+        </button>
+      </div>
+    </div>
 
+    <label for="compare-range" class="visually-hidden">Adjust before and after comparison</label>
+    <input type="range" id="compare-range" class="compare__slider" min="0" max="100" value="50"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+           aria-label="Slide to compare before and after resume wording">
+  </div>
+</section>
     <!-- Upload Section (Home preview) -->
     <section class="section section--alt" aria-labelledby="upload-heading">
       <div class="container">
@@ -271,5 +270,30 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    // Narration functionality
+    window.onload = function() {
+      const narrator = new SpeechSynthesisUtterance();
+      narrator.text = "Goodbye! Thank you for visiting ResumeFit.";
+      window.speechSynthesis.speak(narrator);
+    };
+
+    // Greeting functionality
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'h') {
+        const greeting = new SpeechSynthesisUtterance();
+        greeting.text = "Hello! What do you need assistance with today?";
+        window.speechSynthesis.speak(greeting);
+      }
+    });
+
+    // Activate speech mode for tips
+    function activateSpeechMode() {
+      const tips = new SpeechSynthesisUtterance();
+      tips.text = "Here are some tips to enhance your resume...";
+      window.speechSynthesis.speak(tips);
+    }
+  </script>
 </body>
 </html>
+
