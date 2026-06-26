@@ -328,9 +328,10 @@ p {
 }
 
 .nav {
-  display: grid;
+  display: flex;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  gap: 10px;
   justify-content: space-between;
   padding: var(--space-sm) var(--space-md);
   max-width: var(--max-width);
