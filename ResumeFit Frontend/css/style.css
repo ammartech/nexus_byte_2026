@@ -641,7 +641,7 @@ p {
   color: #0D1117;
 }
 
-.compare__slider {
+/* .compare__slider {
   width: 100%;
   margin-top: var(--space-sm);
   accent-color: var(--color-primary);
@@ -652,7 +652,7 @@ p {
   color: var(--color-muted);
   font-size: 0.85rem;
   margin-top: var(--space-sm);
-}
+} */
 
 /* ---------- Upload Section ---------- */
 .upload-card {
