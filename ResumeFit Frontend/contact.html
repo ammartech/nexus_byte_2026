@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — ResumeFit</title>
+  <meta name="description" content="Get in touch with the ResumeFit team for questions about plans, accessibility, or your account." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">RF</span>
+        ResumeFit
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Open menu</span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <button id="theme-switch" type="button" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#8fbffa" d="M13 .75v4.01a7.3 7.3 0 0 1 3.412 1.414l2.129-2.129l.707-.707l1.414 1.414l-.707.708l-2.129 2.128A7.27 7.27 0 0 1 19.24 11h4.01v2h-4.01a7.3 7.3 0 0 1-1.414 3.412l2.13 2.129l.706.707l-1.414 1.414l-.707-.707l-2.129-2.129A7.3 7.3 0 0 1 13 19.24v4.01h-2v-4.01a7.27 7.27 0 0 1-3.412-1.414l-2.128 2.13l-.708.706l-1.414-1.414l.707-.707l2.13-2.129A7.3 7.3 0 0 1 4.76 13H.75v-2h4.01a7.27 7.27 0 0 1 1.414-3.412L4.045 5.46l-.707-.708l1.414-1.414l.708.707l2.128 2.129A7.27 7.27 0 0 1 11 4.76V.75z"></path><path fill="#2859c5" d="M18.892 14.435a7.36 7.36 0 0 1-9.329-9.327a7.308 7.308 0 1 0 9.329 9.327"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="100" height="100" viewBox="0 0 24 24"g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#8fbffa" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1"></path><path fill="#2859c5" d="M15.78 7.011a5.322 5.322 0 0 0 0 9.978a6.26 6.26 0 1 1 0-9.978"></path></g></svg>
+      </button>
+      <ul class="nav__links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="features.html">Services</a></li>
+        <li><a href="tips.html">Resume Tips</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+      </ul>
+      
+      <!-- <button id="tts-btn" type="button" aria-label="Read page aloud">
+        🔊 Listen
+      </button> -->
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="eyebrow">Contact Us</span>
+        <h1>We're glad to help</h1>
+        <p class="lead">
+          Questions about your account, a plan, or how ResumeFit handles your data?
+          Send us a message and our team will get back to you within one business day.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="section section--alt">
+      <div class="container contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">✉️</div>
+            <h3>Email</h3>
+            <p>For general questions or account help.</p>
+            <p><a href="mailto:support@resumefit.example">support@resumefit.example</a></p>
+          </div>
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">💬</div>
+            <h3>Response time</h3>
+            <p>
+              We aim to reply to every message within one business day. Pro and
+              Career plan members receive priority responses.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">♿</div>
+            <h3>Accessibility feedback</h3>
+            <p>
+              If something on the site doesn't work well with your screen reader,
+              keyboard, or browser settings, please let us know — this helps us fix
+              it for everyone.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <div class="card">
+            <h2>Send us a message</h2>
+            <p>Fields marked with an asterisk (*) are required.</p>
+
+            <div id="form-status" class="form-status"></div>
+
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="contact-name">Full name *</label>
+                <input type="text" id="contact-name" name="name" required
+                  aria-describedby="name-error" autocomplete="name">
+                <p id="name-error" class="field-error" role="alert">Enter your full name (at least 2 characters).</p>
+              </div>
+
+              <div class="field">
+                <label for="contact-email">Email address *</label>
+                <input type="email" id="contact-email" name="email" required
+                  aria-describedby="email-error" autocomplete="email">
+                <p id="email-error" class="field-error" role="alert">Enter a valid email address, like name@example.com.</p>
+              </div>
+
+              <div class="field">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" autocomplete="off">
+              </div>
+
+              <div class="field">
+                <label for="contact-message">Message *</label>
+                <textarea id="contact-message" name="message" required
+                  aria-describedby="message-error"
+                  placeholder="How can we help?"></textarea>
+                <p id="message-error" class="field-error" role="alert">Your message should be at least 10 characters long.</p>
+              </div>
+
+              <div class="hero__cta" style="justify-content: flex-start; margin-top: var(--space-md);">
+                <button type="submit" class="btn btn-primary">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ-style support -->
+    <section class="section" aria-labelledby="support-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Before you write in</span>
+          <h2 id="support-heading">You might find a quick answer here</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>Forgot your plan details?</h3>
+            <p>Visit the <a href="pricing.html">Pricing page</a> for a full comparison of Free, Pro, and Career plans.</p>
+          </div>
+          <div class="card">
+            <h3>Want to improve your resume first?</h3>
+            <p>Check our <a href="tips.html">Resume Tips page</a> for practical, quick adjustments before you upload.</p>
+          </div>
+          <div class="card">
+            <h3>Curious how matching works?</h3>
+            <p>The <a href="features.html">Services page</a> explains keyword matching and ATS-friendly suggestions in detail.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-mark" aria-hidden="true">RF</span>
+          ResumeFit
+        </a>
+        <p>Plain-language resume feedback to help you apply with confidence and reach more interviews.</p>
+        <div class="footer-social" style="margin-top: 1rem;">
+          <a href="#" aria-label="ResumeFit on LinkedIn">in</a>
+          <a href="#" aria-label="ResumeFit on Twitter / X">X</a>
+          <a href="#" aria-label="ResumeFit on Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Services</a></li>
+          <li><a href="optimizer.html">Resume Optimizer</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tips.html">Resume Tips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 ResumeFit. All rights reserved.</p>
+      <p>ResumeFit</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

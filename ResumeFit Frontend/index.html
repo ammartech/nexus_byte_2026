@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResumeFit — Optimize Your Resume for Every Job</title>
+  <meta name="description" content="ResumeFit helps job seekers tailor their resumes with keyword matching, ATS-friendly suggestions, and clear, actionable feedback." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">RF</span>
+        ResumeFit
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Open menu</span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <button id="theme-switch" type="button" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#8fbffa" d="M13 .75v4.01a7.3 7.3 0 0 1 3.412 1.414l2.129-2.129l.707-.707l1.414 1.414l-.707.708l-2.129 2.128A7.27 7.27 0 0 1 19.24 11h4.01v2h-4.01a7.3 7.3 0 0 1-1.414 3.412l2.13 2.129l.706.707l-1.414 1.414l-.707-.707l-2.129-2.129A7.3 7.3 0 0 1 13 19.24v4.01h-2v-4.01a7.27 7.27 0 0 1-3.412-1.414l-2.128 2.13l-.708.706l-1.414-1.414l.707-.707l2.13-2.129A7.3 7.3 0 0 1 4.76 13H.75v-2h4.01a7.27 7.27 0 0 1 1.414-3.412L4.045 5.46l-.707-.708l1.414-1.414l.708.707l2.128 2.129A7.27 7.27 0 0 1 11 4.76V.75z"></path><path fill="#2859c5" d="M18.892 14.435a7.36 7.36 0 0 1-9.329-9.327a7.308 7.308 0 1 0 9.329 9.327"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="100" height="100" viewBox="0 0 24 24"g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#8fbffa" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1"></path><path fill="#2859c5" d="M15.78 7.011a5.322 5.322 0 0 0 0 9.978a6.26 6.26 0 1 1 0-9.978"></path></g></svg>
+      </button>
+      <ul class="nav__links" id="primary-nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="features.html">Services</a></li>
+        <li><a href="tips.html">Resume Tips</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      
+      <!-- <button id="tts-btn" type="button" aria-label="Read page aloud">
+        🔊 Listen
+      </button> -->
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="eyebrow">Built for job seekers</span>
+        <h1>Get past the filters. Get in front of people.</h1>
+        <p class="lead">
+          ResumeFit checks your resume against any job description, finds the gaps,
+          and shows you exactly what to fix — in minutes, not hours.
+        </p>
+        <div class="hero__cta">
+          <a href="optimizer.html" class="btn btn-primary">Check my resume</a>
+          <a href="features.html" class="btn btn-outline">See how it works</a>
+        </div>
+        <p class="hero__trust">Private by default · No account required for a basic check · Built with accessibility in mind</p>
+      </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="section section--alt">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">Who we are</span>
+          <h2>A second pair of eyes for your job search</h2>
+          <p>
+            ResumeFit was built by a small team who spent too many hours guessing why
+            applications went unanswered. We turned that frustration into a tool: a
+            plain-language resume checker that compares your document against a real
+            job description and tells you, in clear terms, what to change.
+          </p>
+          <p>
+            No jargon, no false promises of a guaranteed interview — just a clear,
+            honest read on how your resume matches the role, so you can apply with
+            confidence.
+          </p>
+          <div class="stat-row">
+            <div class="stat">10s
+              <span>Average time to a first result</span>
+            </div>
+            <div class="stat">20+
+              <span>Skill keywords checked per scan</span>
+            </div>
+            <div class="stat">0
+              <span>Resumes stored without your consent</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon-badge" aria-hidden="true">✓</div>
+          <h3>What guides our work</h3>
+          <p>
+            We focus on three things: giving you feedback you can act on today,
+            keeping the platform light enough to run on a slow connection, and
+            making sure every part of the site works with a keyboard or screen reader.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before / After Comparison Section -->
+    <section class="section" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">See the difference</span>
+          <h2 id="compare-heading">From overlooked to shortlisted</h2>
+          <p>
+            Drag the handle, or use the slider below the panel, to compare a resume
+            section before and after a ResumeFit review.
+          </p>
+        </div>
+
+        <div class="compare" role="group" aria-label="Before and after resume comparison">
+          <div class="compare__panel compare__panel--before" aria-hidden="true">
+            <span class="compare__label">Before</span>
+            <div class="compare__line"><span class="mark">–</span><span>Responsible for handling various tasks in a fast paced environment</span></div>
+            <div class="compare__line"><span class="mark">–</span><span>Worked on social media stuff for the team</span></div>
+            <div class="compare__line"><span class="mark">–</span><span>Helped improve customer satisfaction</span></div>
+            <div class="compare__line"><span class="mark">–</span><span>Good communication and teamwork skills</span></div>
+          </div>
+          <div class="compare__panel compare__panel--after" aria-hidden="true">
+            <span class="compare__label">After</span>
+            <div class="compare__line"><span class="mark">+</span><span>Managed daily scheduling and inventory for a 12-person retail team</span></div>
+            <div class="compare__line"><span class="mark">+</span><span>Grew Instagram engagement 34% through a weekly content plan</span></div>
+            <div class="compare__line"><span class="mark">+</span><span>Raised customer satisfaction scores from 81% to 92% in 6 months</span></div>
+            <div class="compare__line"><span class="mark">+</span><span>Led weekly team huddles and trained 4 new hires</span></div>
+          </div>
+          <div class="compare__handle">
+            <button type="button" class="compare__handle-grip" aria-hidden="true" tabindex="-1">
+              ↔
+            </button>
+          </div>
+        </div>
+
+        <!-- <label for="compare-range" class="visually-hidden">Adjust before and after comparison</label>
+        <input type="range" id="compare-range" class="compare__slider" min="0" max="100" value="50"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+               aria-label="Slide to compare before and after resume wording"> -->
+        <!-- <p class="compare__caption">Same experience, written to show impact and match common job-description language.</p> -->
+      </div>
+    </section>
+
+    <!-- Upload Section (Home preview) -->
+    <section class="section section--alt" aria-labelledby="upload-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Try it now</span>
+          <h2 id="upload-heading">Upload your resume to get started</h2>
+          <p>
+            Add your resume and paste a job description on the optimizer page to receive
+            a match score and tailored suggestions.
+          </p>
+        </div>
+
+        <div class="upload-card">
+          <div class="dropzone" role="button" tabindex="0" aria-label="Upload your resume file. Opens a file picker.">
+            <div class="dropzone__icon" aria-hidden="true">📄</div>
+            <h3>Drop your resume here</h3>
+            <p>or click to browse — PDF, DOC, or DOCX, up to 5MB</p>
+            <input type="file" id="resume-file-home" accept=".pdf,.doc,.docx" />
+          </div>
+          <p id="file-status-home" class="file-status" aria-live="polite"></p>
+          <div class="hero__cta" style="margin-top: var(--space-md);">
+            <a href="optimizer.html" class="btn btn-primary">Continue to the optimizer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">What people say</span>
+          <h2 id="reviews-heading">Trusted by job seekers across industries</h2>
+          <p>Real feedback from people who used ResumeFit before applying.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card testimonial">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <blockquote>
+              <p>The keyword report showed me exactly which skills I'd left out. I got
+              two interview calls the same week I updated my resume.</p>
+            </blockquote>
+            <cite>Hira N.<span class="role">Marketing Coordinator</span></cite>
+          </div>
+          <div class="card testimonial">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <blockquote>
+              <p>Simple, fast, and honest. It didn't promise miracles — it just told me
+              what an ATS would actually flag.</p>
+            </blockquote>
+            <cite>Daniyal R.<span class="role">Computer Science Graduate</span></cite>
+          </div>
+          <div class="card testimonial">
+            <div class="stars" aria-hidden="true">★★★★☆</div>
+            <blockquote>
+              <p>I liked that the suggestions were specific. "Add more technical skills"
+              type advice that I could actually use.</p>
+            </blockquote>
+            <cite>Sara M.<span class="role">Project Coordinator</span></cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Ready to see your match score?</h2>
+          <p>It takes less than a minute and your file stays on this device for the demo.</p>
+          <a href="optimizer.html" class="btn btn-accent">Start your free check</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-mark" aria-hidden="true">RF</span>
+          ResumeFit
+        </a>
+        <p>Plain-language resume feedback to help you apply with confidence and reach more interviews.</p>
+        <div class="footer-social" style="margin-top: 1rem;">
+          <a href="#" aria-label="ResumeFit on LinkedIn">in</a>
+          <a href="#" aria-label="ResumeFit on Twitter / X">X</a>
+          <a href="#" aria-label="ResumeFit on Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Services</a></li>
+          <li><a href="optimizer.html">Resume Optimizer</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tips.html">Resume Tips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 ResumeFit. All rights reserved.</p>
+      <p>ResumeFit</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

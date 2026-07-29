@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — ResumeFit</title>
+  <meta name="description" content="Learn about ResumeFit's mission to help job seekers optimize their resumes with clear, accessible, and honest feedback." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">RF</span>
+        ResumeFit
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Open menu</span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <button id="theme-switch" type="button" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="64" height="64" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#8fbffa" d="M13 .75v4.01a7.3 7.3 0 0 1 3.412 1.414l2.129-2.129l.707-.707l1.414 1.414l-.707.708l-2.129 2.128A7.27 7.27 0 0 1 19.24 11h4.01v2h-4.01a7.3 7.3 0 0 1-1.414 3.412l2.13 2.129l.706.707l-1.414 1.414l-.707-.707l-2.129-2.129A7.3 7.3 0 0 1 13 19.24v4.01h-2v-4.01a7.27 7.27 0 0 1-3.412-1.414l-2.128 2.13l-.708.706l-1.414-1.414l.707-.707l2.13-2.129A7.3 7.3 0 0 1 4.76 13H.75v-2h4.01a7.27 7.27 0 0 1 1.414-3.412L4.045 5.46l-.707-.708l1.414-1.414l.708.707l2.128 2.129A7.27 7.27 0 0 1 11 4.76V.75z"></path><path fill="#2859c5" d="M18.892 14.435a7.36 7.36 0 0 1-9.329-9.327a7.308 7.308 0 1 0 9.329 9.327"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="100" height="100" viewBox="0 0 24 24"g fill="none" fill-rule="evenodd" clip-rule="evenodd"><path fill="#8fbffa" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1"></path><path fill="#2859c5" d="M15.78 7.011a5.322 5.322 0 0 0 0 9.978a6.26 6.26 0 1 1 0-9.978"></path></g></svg>
+      </button>
+      <ul class="nav__links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+        <li><a href="features.html">Services</a></li>
+        <li><a href="tips.html">Resume Tips</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      
+      <!-- <button id="tts-btn" type="button" aria-label="Read page aloud">
+        🔊 Listen
+      </button> -->
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="eyebrow">About ResumeFit</span>
+        <h1>We help good resumes get read</h1>
+        <p class="lead">
+          Most resumes aren't rejected because the person isn't qualified — they're
+          rejected because the resume doesn't speak the same language as the job
+          description. We built ResumeFit to close that gap.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission / Story -->
+    <section class="section section--alt">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">Our story</span>
+          <h2>Built from a frustrating job search</h2>
+          <p>
+            ResumeFit started as a small side project after one of our team members
+            applied to over sixty roles and heard back from almost none of them.
+            After reformatting the same resume to match each job description more
+            closely, the responses started coming in. The content hadn't changed —
+            only the wording and structure had.
+          </p>
+          <p>
+            That experiment became the basis for ResumeFit: a tool that compares a
+            resume against a job description, highlights the overlap, and explains
+            in plain terms what to adjust.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon-badge" aria-hidden="true">🎯</div>
+          <h3>Our mission</h3>
+          <p>
+            To give every job seeker the same advantage that comes naturally to
+            recruiters and hiring managers: a clear view of how a resume reads
+            against the role it's applied to, regardless of background or budget.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How resume optimization helps -->
+    <section class="section" aria-labelledby="how-it-helps">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Why it matters</span>
+          <h2 id="how-it-helps">How resume optimization helps job seekers</h2>
+          <p>
+            Optimization isn't about tricking software — it's about making sure your
+            real experience is described in a way that both software and people can
+            quickly recognize as relevant.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">🔍</div>
+            <h3>Gets past automated screening</h3>
+            <p>
+              Many companies use applicant tracking systems to scan resumes for
+              relevant terms before a person ever sees them. Matching the language
+              of the job description helps your resume clear that first filter.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">⏱️</div>
+            <h3>Saves recruiters time</h3>
+            <p>
+              A resume that mirrors the job posting's structure and terms is faster
+              for a recruiter to scan, which means your strongest points are more
+              likely to be noticed in the first few seconds.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-badge" aria-hidden="true">📈</div>
+            <h3>Builds application confidence</h3>
+            <p>
+              Knowing exactly which skills are missing — or already strong — helps
+              you decide which roles are worth applying to and which need a quick
+              edit first.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section section--alt" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">What we stand for</span>
+          <h2 id="values-heading">The principles behind ResumeFit</h2>
+        </div>
+
+        <div class="grid grid--4">
+          <div class="card">
+            <h3>Honesty</h3>
+            <p>We show you real gaps, not vague encouragement. Clear feedback helps more than empty praise.</p>
+          </div>
+          <div class="card">
+            <h3>Accessibility</h3>
+            <p>The platform is built to work with screen readers, keyboards, and slower connections from day one.</p>
+          </div>
+          <div class="card">
+            <h3>Privacy</h3>
+            <p>Your resume is yours. We are clear about what is stored, for how long, and why.</p>
+          </div>
+          <div class="card">
+            <h3>Simplicity</h3>
+            <p>No clutter, no jargon — just the information you need to make your next move.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Curious how your resume measures up?</h2>
+          <p>Run a free check against any job description in under a minute.</p>
+          <a href="optimizer.html" class="btn btn-accent">Try the optimizer</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-mark" aria-hidden="true">RF</span>
+          ResumeFit
+        </a>
+        <p>Plain-language resume feedback to help you apply with confidence and reach more interviews.</p>
+        <div class="footer-social" style="margin-top: 1rem;">
+          <a href="#" aria-label="ResumeFit on LinkedIn">in</a>
+          <a href="#" aria-label="ResumeFit on Twitter / X">X</a>
+          <a href="#" aria-label="ResumeFit on Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Services</a></li>
+          <li><a href="optimizer.html">Resume Optimizer</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tips.html">Resume Tips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 ResumeFit. All rights reserved.</p>
+      <p>ResumeFit</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
